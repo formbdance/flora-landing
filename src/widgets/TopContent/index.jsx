@@ -1,4 +1,6 @@
 import GreenArt from "@/src/shared/GreenArt";
+import BigBtn from "@/src/shared/UI/BigBtn";
+import Image from "next/image";
 const TopContent = () => {
   return (
     <section className="semigray-300">
@@ -13,11 +15,11 @@ const TopContent = () => {
             <span>space</span>
           </h2>
           <div className="flex gap-6 mt-3">
-            <button className="border-semigreen-300 text-semigreen-300 rounded-full w-44 h-14 font-semibold">
-              Discover
-            </button>
-            <button className="underline font-semibold flex gap-4 items-center">
-              <div className="bg-green-900 w-10 h-10 rounded-full" />
+            <BigBtn title="Discover" />
+            <button className="underline font-semibold flex gap-3 items-center">
+              <div className="bg-green-900 w-10 h-10 rounded-full flex items-center justify-center">
+                <Image src={require("./img/play.png")} />
+              </div>
               Watch video
             </button>
           </div>
