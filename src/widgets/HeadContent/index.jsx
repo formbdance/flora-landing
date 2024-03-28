@@ -1,9 +1,9 @@
-import Corsine from "@/src/entity/corsine";
-import Magnifier from "@/src/entity/magnifier";
+import Corsine from "@/src/features/corsine";
+import Magnifier from "@/src/features/magnifier";
 
 const HeadContent = () => {
   return (
-    <header className="py-10 semigray-300">
+    <header className="py-10 semigray-300 px-8 xl:px-0">
       <nav className="flex justify-between container">
         <div className="flex items-center gap-2">
           <p className="bg-gray-400 rounded-full text-white w-12 h-12 flex items-center justify-center">
